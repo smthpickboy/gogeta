@@ -1,0 +1,7 @@
+{
+    "Disable": ["gocyclo", "vetshadow", "gotype"],
+    "Enable": ["goimports"],
+    "Vendor": true,
+    "Exclude": ["should have comment"],
+    "Skip": ["api", "test"]
+}

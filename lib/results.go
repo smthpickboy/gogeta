@@ -2,12 +2,15 @@ package vegeta
 
 import (
 	"encoding/gob"
-	"encoding/json"
 	"fmt"
 	"io"
 	"sort"
 	"time"
+
+	"github.com/json-iterator/go"
 )
+
+var json = jsoniter.ConfigCompatibleWithStandardLibrary
 
 func init() {
 	gob.Register(&Result{})
@@ -22,6 +25,7 @@ type Result struct {
 	BytesOut  uint64        `json:"bytes_out"`
 	BytesIn   uint64        `json:"bytes_in"`
 	Error     string        `json:"error"`
+	Body      []byte        `json:"body"`
 }
 
 // End returns the time at which a Result ended.

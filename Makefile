@@ -5,14 +5,14 @@ SRC = $(shell find . -type f -name '*.go' -not -path "./vendor/*")
 VERSION := v0.1.0
 BUILD := `git rev-parse --short HEAD`
 TARGETS := gogeta
-project= tsenart/vegeta
+project= github.com/smthpickboy/gogeta
 
 all: check build
 
 build: $(TARGETS) $(TEST_TARGETS)
 
 $(TARGETS): $(SRC)
-	$(GO) build $(project)/cmd/$@
+	$(GO) build $(project)
 
 .PHONY: clean all build check image
 

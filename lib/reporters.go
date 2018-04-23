@@ -1,7 +1,6 @@
 package vegeta
 
 import (
-	"encoding/json"
 	"fmt"
 	"io"
 	"strconv"

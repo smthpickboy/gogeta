@@ -1,8 +1,18 @@
+# Gogeta
+
 Gogeta, as his name suggests, includes more skills than Vegeta:
 1. return HTTP response body
 
+### Source
+You need `go` installed and `GOBIN` in your `PATH`. Once that is done, run the
+command:
+```shell
+$ go get -u github.com/smthpickboy/gogeta
+```
 
-The following document is copied from Vegeta.
+![Gogeta](https://vignette.wikia.nocookie.net/dragonball/images/6/66/SS_Xeno_Gogeta.png)
+
+#### The following document is copied from Vegeta.
 
 # Vegeta [![Build Status](https://secure.travis-ci.org/tsenart/vegeta.svg)](http://travis-ci.org/tsenart/vegeta) [![Go Report Card](https://goreportcard.com/badge/github.com/tsenart/vegeta)](https://goreportcard.com/report/github.com/tsenart/vegeta) [![GoDoc](https://godoc.org/github.com/tsenart/vegeta?status.svg)](https://godoc.org/github.com/tsenart/vegeta) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/tsenart/vegeta?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![Donate](https://img.shields.io/badge/donate-bitcoin-yellow.svg)](#donate)
 
